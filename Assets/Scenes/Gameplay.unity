@@ -213,6 +213,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1217280417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217280419}
+  - component: {fileID: 1217280418}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1217280418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217280417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50cdbef7a9a4cf741b4b4e430b243254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tetrominoes:
+  - {fileID: 3890147776145679989, guid: 7d5bf13fd9fefc548b2026a1dd4cc55a, type: 3}
+  - {fileID: 488163366377796725, guid: 0b6346566620c2f4e8a3b3486dfc8126, type: 3}
+  - {fileID: 8104647283944892419, guid: 7b1cd6e520ebe774892a3e416d6128dc, type: 3}
+  - {fileID: 4618787152748065128, guid: e2725a185b717ce4b9e3804cf9fec300, type: 3}
+  - {fileID: 8220033666019683771, guid: 8a6004b3a20ca494ca2a0ad65b80ade2, type: 3}
+  - {fileID: 928310150479683494, guid: ef3980089fd54c04ca8e3def149e1f5c, type: 3}
+  - {fileID: 8881587398682682355, guid: 91e4efd3260019b40853c12459fc469a, type: 3}
+--- !u!4 &1217280419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217280417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 15, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1270672163
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,7 +318,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
