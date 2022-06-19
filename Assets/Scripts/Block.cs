@@ -5,6 +5,7 @@ using UnityEngine;
 public class Block : MonoBehaviour
 {
     private float previousTime;
+    public Vector3 rotationPoint;
     public float fallTime = 0.8f;
     public static int height = 80;
     public static int width = 10;
@@ -33,6 +34,17 @@ public class Block : MonoBehaviour
             {
                 transform.position -= new Vector3(1, 0, 0);
             }
+        }
+        else if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            transform.Rotate(rotationPoint, 90f);
+            Debug.Log("dziala");
+            if (!validMove())
+            {
+                Debug.Log("nie dziala");
+                transform.Rotate(rotationPoint, -90f);
+            }
+                
         }
 
         if(Time.time - previousTime > (Input.GetKey(KeyCode.DownArrow) ? fallTime/10 :fallTime ) )
